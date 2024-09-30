@@ -1,0 +1,140 @@
+/* Define o estilo do contêiner principal onde o header (cabeçalho) está contido */
+.container {
+    display: flex; /* Alinha o conteúdo de forma flexível */
+    justify-content: space-between; /* Espaça os elementos da navbar igualmente */
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 10px 20px; /* Adiciona espaço interno ao redor dos itens */
+    background-color: #333; /* Cor de fundo escura para o cabeçalho */
+}
+
+/* Estiliza a imagem do logo do restaurante */
+.container img {
+    height: 60px; /* Define uma altura padrão para o logo */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+/* Remove a formatação padrão da lista da navbar */
+nav ul {
+    list-style-type: none; /* Remove as bolinhas da lista */
+    margin: 0; /* Remove a margem da lista */
+    padding: 0; /* Remove o espaçamento interno */
+    display: flex; /* Alinha os itens da lista em linha */
+}
+
+/* Estiliza os itens da lista na navbar */
+nav ul li {
+    margin-left: 20px; /* Adiciona espaço entre os links */
+}
+
+/* Estiliza os links de navegação */
+nav ul li a {
+    color: white; /* Cor do texto branco */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px 20px; /* Adiciona espaçamento ao redor dos links */
+    display: block; /* Faz com que o link ocupe toda a área clicável */
+    background-color: #444; /* Cor de fundo padrão dos links */
+    border-radius: 5px; /* Bordas arredondadas nos links */
+}
+
+/* Estiliza os links ao passar o mouse */
+nav ul li a:hover {
+    background-color: #555; /* Muda a cor de fundo quando o mouse está sobre o link */
+}
+
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    line-height: 1.4; /* Espaçamento entre linhas */
+    margin: 0; /* Remove as margens do body */
+    padding: 0; /* Remove o padding */
+    background-color: #f4f4f4; /* Define um fundo claro para o corpo da página */
+    color: #333; /* Define uma cor de texto escura */
+    text-align: absolute; /* Centraliza o texto no corpo */
+    padding-top: 20px; /* Adiciona espaçamento entre o topo e o conteúdo */
+}
+
+/* Estiliza os títulos principais */
+h1 {
+    color: #333; /* Define uma cor escura para o texto */
+    margin-bottom: 10px; /* Adiciona um espaçamento abaixo do título */
+    font-size: 2.5em; /* Aumenta o tamanho do texto */
+}
+
+/* Estiliza os subtítulos */
+h2 {
+    color: #666; /* Cor mais clara para os subtítulos */
+    margin-bottom: 20px; /* Espaçamento maior abaixo */
+    font-size: 2em; /* Tamanho um pouco menor que o h1 */
+}
+
+/* Estiliza o texto descritivo */
+h3 {
+    color: #777; /* Cor mais suave para o texto de suporte */
+    margin-bottom: 30px; /* Adiciona espaçamento inferior maior */
+    font-size: 1.5em; /* Define um tamanho menor para os textos descritivos */
+    line-height: 1.4; /* Ajusta o espaçamento entre as linhas do texto */
+}
+/* Estiliza o contêiner do rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto no rodapé */
+    padding: 20px 0; /* Espaçamento vertical do rodapé */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza o contêiner dentro do rodapé */
+.footer-container {
+    max-width: 1000px; /* Define a largura máxima */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+/* Estiliza o contêiner de links sociais e botão WhatsApp */
+.social-links {
+    display: flex; /* Usa Flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 20px; /* Adiciona espaço entre os ícones e o botão */
+}
+
+/* Estiliza os links das redes sociais */
+.social-links a {
+    display: inline-block; /* Mantém os ícones em linha */
+}
+
+/* Estiliza o botão do WhatsApp */
+.whatsapp-button {
+    background-color: #25d366; /* Cor verde característica do WhatsApp */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove bordas */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebc57; /* Cor ao passar o mouse sobre o botão */
+}
+form {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    max-width: 400px; /* Define a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+label, input, textarea {
+    margin-bottom: 10px; /* Espaçamento entre os elementos */
+}
+
+input, textarea {
+    padding: 8px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte dos campos */
+    width: 100%; /* Faz com que o campo ocupe 100% da largura disponível */
+    box-sizing: border-box; /* Garante que padding não altere a largura */
+}
+
+/* Ajusta o tamanho da textarea */
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+    height: 100px; /* Altura inicial */
+}
